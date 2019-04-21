@@ -143,71 +143,6 @@
 
 
   
-    <article id="post-supervisor的安装与使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/supervisor的安装与使用.md/" class="article-date">
-  <time datetime="2019-04-19T14:03:18.078Z" itemprop="datePublished">2019-04-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/supervisor的安装与使用.md/">supervisor安装与使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="supervisor的安装与使用"><a href="#supervisor的安装与使用" class="headerlink" title="supervisor的安装与使用"></a>supervisor的安装与使用</h1><h4 id="supervisor的作用"><a href="#supervisor的作用" class="headerlink" title="supervisor的作用:"></a>supervisor的作用:</h4><ul>
-<li><p><code>superviosr</code>  是linux或unix环境下常用的进程管理工具,它支持windows和Mac平台下使用,用来控制管理进程(启动,重启,kill)等.</p>
-</li>
-<li><p>使用<code>supervisor</code>管理的进程, 可以做到以守护进程的方式,可以对服务异常关闭的进程进行重启;</p>
-<p>####supervisor的安装 :</p>
-<ul>
-<li><strong>supervisord</strong>     服务端使用命令</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>supervisorctl</strong>    客户端使用命令</p>
-<p><code>pip install supervisor</code>直接使用python自带pip 安装</p>
-<p><code>supervisord -v</code>用来查看下载的版本</p>
-<h4 id="supervisor的配置和启动："><a href="#supervisor的配置和启动：" class="headerlink" title="supervisor的配置和启动："></a>supervisor的配置和启动：</h4><p><img src="D:\新建文件夹 (2" alt="png">\md_png\supervisor.png)</p>
-<p>####编写supervisor的应用启动脚本：      <img src="D:\新建文件夹 (2" alt="png">\md_png\supervisorctl.png)</p>
-</li>
-</ul>
-<p>​        <code>supervisorctl update</code>命令可以重启supervisord服务端</p>
-<h4 id="supervisorctl的使用："><a href="#supervisorctl的使用：" class="headerlink" title="supervisorctl的使用："></a>supervisorctl的使用：</h4><p>　　<code>help</code>  <strong>帮助</strong></p>
-<p>​        <code>status</code>  <strong>查看程序状态</strong></p>
-<p>​        <code>stop program_name</code>  <strong>关闭指定的程序</strong></p>
-<p>​        <code>start program_name</code> <strong>启动指定的程序</strong></p>
-<p>​        <code>restart program_name</code>  <strong>重启指定的程序</strong></p>
-<p>​        <code>tail -f program_name</code> <strong>查看该程序的日志</strong></p>
-<p>​        <code>update</code>  <strong>重启配置文件修改过的程序</strong></p>
-<p>​        也可以直接通过shell命令行操作： </p>
-<p>​        <code>supervisorctl status</code></p>
-<p>​        <code>supervisorctl update</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/supervisor的安装与使用.md/" data-id="cjuqw0n450001lgv9xa5y4ijs" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
 </section>
@@ -244,10 +179,6 @@
         
           <li>
             <a href="/hello-world.md/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/supervisor的安装与使用.md/">supervisor安装与使用</a>
           </li>
         
       </ul>
