@@ -7,13 +7,19 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="生产环境搭建 安装方式(linux-mysql)(这里是在主目录下安装：)  yum install -y mysql-server  #yum安装，需要外网环境 将rpm文件，传送给linux，然后，通过rpm指令完成安装 rpm -ivh perl-*.rpm  #安装所有perl依赖 rpm -Uvh mysql-libs-5.1.73-7.el6.i686.rpm  #更新mysql的类库">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/生产环境搭建.md/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="生产环境搭建 安装方式(linux-mysql)(这里是在主目录下安装：)  yum install -y mysql-server  #yum安装，需要外网环境 将rpm文件，传送给linux，然后，通过rpm指令完成安装 rpm -ivh perl-*.rpm  #安装所有perl依赖 rpm -Uvh mysql-libs-5.1.73-7.el6.i686.rpm  #更新mysql的类库">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="d:/Users/asus/AppData/Roaming/feiq/Recv%20Files/wsgi.png">
+<meta property="og:updated_time" content="2018-08-05T09:16:23.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="生产环境搭建 安装方式(linux-mysql)(这里是在主目录下安装：)  yum install -y mysql-server  #yum安装，需要外网环境 将rpm文件，传送给linux，然后，通过rpm指令完成安装 rpm -ivh perl-*.rpm  #安装所有perl依赖 rpm -Uvh mysql-libs-5.1.73-7.el6.i686.rpm  #更新mysql的类库">
+<meta name="twitter:image" content="d:/Users/asus/AppData/Roaming/feiq/Recv%20Files/wsgi.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-生产环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-生产环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/生产环境搭建.md/" class="article-date">
   <time datetime="2019-04-21T16:10:36.577Z" itemprop="datePublished">2019-04-22</time>
@@ -333,121 +337,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/hello-world.md/" class="article-date">
-  <time datetime="2019-04-20T17:31:15.627Z" itemprop="datePublished">2019-04-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/hello-world.md/">Hello World</a>
-    </h1>
+    <a href="/hello-world.md/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/hello-world.md/" data-id="cjuqw0n3x0000lgv9pilff9s6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-supervisor的安装与使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/supervisor的安装与使用.md/" class="article-date">
-  <time datetime="2019-04-19T14:03:18.078Z" itemprop="datePublished">2019-04-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/supervisor的安装与使用.md/">supervisor安装与使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="supervisor的安装与使用"><a href="#supervisor的安装与使用" class="headerlink" title="supervisor的安装与使用"></a>supervisor的安装与使用</h1><h4 id="supervisor的作用"><a href="#supervisor的作用" class="headerlink" title="supervisor的作用:"></a>supervisor的作用:</h4><ul>
-<li><p><code>superviosr</code>  是linux或unix环境下常用的进程管理工具,它支持windows和Mac平台下使用,用来控制管理进程(启动,重启,kill)等.</p>
-</li>
-<li><p>使用<code>supervisor</code>管理的进程, 可以做到以守护进程的方式,可以对服务异常关闭的进程进行重启;</p>
-<p>####supervisor的安装 :</p>
-<ul>
-<li><strong>supervisord</strong>     服务端使用命令</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>supervisorctl</strong>    客户端使用命令</p>
-<p><code>pip install supervisor</code>直接使用python自带pip 安装</p>
-<p><code>supervisord -v</code>用来查看下载的版本</p>
-<h4 id="supervisor的配置和启动："><a href="#supervisor的配置和启动：" class="headerlink" title="supervisor的配置和启动："></a>supervisor的配置和启动：</h4><p><img src="D:\新建文件夹 (2" alt="png">\md_png\supervisor.png)</p>
-<p>####编写supervisor的应用启动脚本：      <img src="D:\新建文件夹 (2" alt="png">\md_png\supervisorctl.png)</p>
-</li>
-</ul>
-<p>​        <code>supervisorctl update</code>命令可以重启supervisord服务端</p>
-<h4 id="supervisorctl的使用："><a href="#supervisorctl的使用：" class="headerlink" title="supervisorctl的使用："></a>supervisorctl的使用：</h4><p>　　<code>help</code>  <strong>帮助</strong></p>
-<p>​        <code>status</code>  <strong>查看程序状态</strong></p>
-<p>​        <code>stop program_name</code>  <strong>关闭指定的程序</strong></p>
-<p>​        <code>start program_name</code> <strong>启动指定的程序</strong></p>
-<p>​        <code>restart program_name</code>  <strong>重启指定的程序</strong></p>
-<p>​        <code>tail -f program_name</code> <strong>查看该程序的日志</strong></p>
-<p>​        <code>update</code>  <strong>重启配置文件修改过的程序</strong></p>
-<p>​        也可以直接通过shell命令行操作： </p>
-<p>​        <code>supervisorctl status</code></p>
-<p>​        <code>supervisorctl update</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/supervisor的安装与使用.md/" data-id="cjuqwfv050000xkv9jd59cn3b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
