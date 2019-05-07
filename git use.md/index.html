@@ -7,17 +7,17 @@
   
   <title>git use | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git  �ܽ᣺  ����ʹ��һ����Ŀ�Ĵ���ʱ��git clone  git@hostname:ip·��  ���ڵ�ǰʹ��gitĿ¼������һ����Ŀ���� ��clone�´���֮�󣬶���Ŀ�����޸ĺ͸��µĵط��ύ��merge request1.�ڱ��ع���������һ����֧�� git branch -b mydevp git branch">
+  <meta name="description" content="git  总结： 初次使用一个项目的代码时： 1git clone  git@hostname:ip路径 会在当前使用git目录下生成一个项目名．  当clone下代码之后，对项目代码修改和更新的地方提交，merge request 123456781.在本地工作区创建一个分支：git branch -b mydevpgit branch *master   #本地仓库的master,并非远端ma">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git use">
 <meta property="og:url" content="http://yoursite.com/git use.md/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="git  �ܽ᣺  ����ʹ��һ����Ŀ�Ĵ���ʱ��git clone  git@hostname:ip·��  ���ڵ�ǰʹ��gitĿ¼������һ����Ŀ���� ��clone�´���֮�󣬶���Ŀ�����޸ĺ͸��µĵط��ύ��merge request1.�ڱ��ع���������һ����֧�� git branch -b mydevp git branch">
+<meta property="og:description" content="git  总结： 初次使用一个项目的代码时： 1git clone  git@hostname:ip路径 会在当前使用git目录下生成一个项目名．  当clone下代码之后，对项目代码修改和更新的地方提交，merge request 123456781.在本地工作区创建一个分支：git branch -b mydevpgit branch *master   #本地仓库的master,并非远端ma">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-07T16:04:45.127Z">
+<meta property="og:updated_time" content="2019-05-07T16:14:08.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git use">
-<meta name="twitter:description" content="git  �ܽ᣺  ����ʹ��һ����Ŀ�Ĵ���ʱ��git clone  git@hostname:ip·��  ���ڵ�ǰʹ��gitĿ¼������һ����Ŀ���� ��clone�´���֮�󣬶���Ŀ�����޸ĺ͸��µĵط��ύ��merge request1.�ڱ��ع���������һ����֧�� git branch -b mydevp git branch">
+<meta name="twitter:description" content="git  总结： 初次使用一个项目的代码时： 1git clone  git@hostname:ip路径 会在当前使用git目录下生成一个项目名．  当clone下代码之后，对项目代码修改和更新的地方提交，merge request 123456781.在本地工作区创建一个分支：git branch -b mydevpgit branch *master   #本地仓库的master,并非远端ma">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,33 +86,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>git  �ܽ᣺</p>
-<ul>
-<li>����ʹ��һ����Ŀ�Ĵ���ʱ��<pre><code>git clone  git@hostname:ip·�� 
-</code></pre>���ڵ�ǰʹ��gitĿ¼������һ����Ŀ����</li>
-<li>��clone�´���֮�󣬶���Ŀ�����޸ĺ͸��µĵط��ύ��merge request<pre><code>1.�ڱ��ع���������һ����֧��
-git branch -b mydevp
-git branch 
-*master   #���زֿ��master,����Զ��master 
-mydevp
-2.git checkout mydevp 
-3.git add .
-4.git commit -m &apos;˵��&apos;
-</code></pre></li>
-<li>�����ش�����Զ���ύ<pre><code>1.�����ط�֧�л�������֧master����
-git checkout master 
-2.��Զ������֧����pull����
-git pull origin --rebase master
-3.���pull֮��û�г�ͻ����������ƴ����ˣ�
-git push 
-4.��push�����֮�󣬾Ϳ�����gitlab�Ͽ����ӱ����ĸ���֧���ύ�����Ĵ����ˣ�
-</code></pre></li>
-<li>���Զ�̴����и��£���Ҫ�����룮<pre><code>��Զ����ȡ���µĴ���
-1.���뵱ǰ��ĿĿ¼�£�
-git checkout master 
-2.�л������ص�����֧֮����ȥpull���뵽���ع�����
-git pull origin --rebase master 
-</code></pre></li>
+        <h3 id="git-总结："><a href="#git-总结：" class="headerlink" title="git  总结："></a>git  总结：</h3><ul>
+<li><p>初次使用一个项目的代码时：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  git@hostname:ip路径</span><br></pre></td></tr></table></figure>
+<p>会在当前使用git目录下生成一个项目名．</p>
+</li>
+<li><p>当<code>clone</code>下代码之后，对项目代码修改和更新的地方提交，merge request</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.在本地工作区创建一个分支：</span><br><span class="line">git branch -b mydevp</span><br><span class="line">git branch </span><br><span class="line">*master   #本地仓库的master,并非远端master </span><br><span class="line">mydevp</span><br><span class="line">2.git checkout mydevp </span><br><span class="line">3.git add .</span><br><span class="line">4.git commit -m &apos;说明&apos;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将本地代码向远程提交</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.将本地分支切换到主分支master上来</span><br><span class="line">git checkout master </span><br><span class="line">2.将远端主分支代码pull过来</span><br><span class="line">git pull origin --rebase master</span><br><span class="line">3.如果pull之后，没有冲突错误，则可以推代码了：</span><br><span class="line">git push </span><br><span class="line">4.当push完代码之后，就可以在gitlab上看到从本地哪个分支上提交上来的代码了．</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果远程代码有更新，需要拉代码．</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">从远程拉取最新的代码</span><br><span class="line">1.进入当前项目目录下．</span><br><span class="line">git checkout master </span><br><span class="line">2.切换到本地的主分支之后，再去pull代码到本地工作区</span><br><span class="line">git pull origin --rebase master</span><br></pre></td></tr></table></figure>
+<p>​</p>
+</li>
 </ul>
 
       
