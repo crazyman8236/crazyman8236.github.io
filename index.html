@@ -62,6 +62,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git-flow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/git-flow.md/" class="article-date">
+  <time datetime="2019-06-04T17:15:35.000Z" itemprop="datePublished">2019-06-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/git-flow.md/">git-flow</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>安装(只介绍mac下的安装)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew update </span><br><span class="line">brew install git-flow-avh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将远程GitflowDemo克隆到本地，并进入GitflowDemo目录：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">首先初始化：</span><br><span class="line">git flow init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开发新功能(feature):</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git flow feature start my-feature </span><br><span class="line">Switched to a new branch <span class="string">'feature/my-feature'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在新分支my-feature上添加新功能：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git add test.txt</span><br><span class="line">$ git commit -m <span class="string">"create test.txt"</span></span><br><span class="line">[feature/my-feature e783fdf] create test.txt</span><br><span class="line"><span class="number">1</span> file changed, <span class="number">1</span> insertion(+)</span><br><span class="line">create mode <span class="number">100644</span> test.txt</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch feature/my-feature</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>完成开发，合并到develop分支上：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git flow feature finish my-feature</span><br><span class="line">Switched to branch <span class="string">'develop'</span></span><br><span class="line">Updating bde3a64..e783fdf</span><br><span class="line">Fast-forward</span><br><span class="line"> test.txt | <span class="number">1</span> +</span><br><span class="line"> <span class="number">1</span> file changed, <span class="number">1</span> insertion(+)</span><br><span class="line"> create mode <span class="number">100644</span> test.txt</span><br><span class="line">Deleted branch feature/my-feature (was e783fdf).</span><br><span class="line"></span><br><span class="line">Summary of actions:</span><br><span class="line">- The feature branch <span class="string">'feature/my-feature'</span> was merged into <span class="string">'develop'</span></span><br><span class="line">- Feature branch <span class="string">'feature/my-feature'</span> has been locally deleted</span><br><span class="line">- You are now on branch <span class="string">'develop'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* develop</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>就这样完成了合并到develop分支上s</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/git-flow.md/" data-id="cjwi2f9100000h8v9sd2937b3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-git use" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/git use.md/" class="article-date">
@@ -104,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/git use.md/" data-id="cjvdzj4qz0000o4v9i8gsovp1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/git use.md/" data-id="cjwi2f92x0001h8v953vg1kap" class="article-share-link">Share</a>
       
       
     </footer>
@@ -387,7 +444,7 @@ server {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/linux生产环境搭建.md/" data-id="cjvdzj4rf0003o4v9f2zddzah" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/linux生产环境搭建.md/" data-id="cjwi2f93b0004h8v9rmwal95v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -432,7 +489,7 @@ server {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/hello-world.md/" data-id="cjvdzj4r60001o4v96sgboaws" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/hello-world.md/" data-id="cjwi2f92z0002h8v9ncfwvv1l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -497,7 +554,7 @@ server {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/supervisor的安装与使用.md/" data-id="cjvdzj4r90002o4v91nanpn6e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/supervisor的安装与使用.md/" data-id="cjwi2f9320003h8v9nexp3lav" class="article-share-link">Share</a>
       
       
     </footer>
@@ -525,7 +582,7 @@ server {
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
     </div>
   </div>
 
@@ -536,6 +593,10 @@ server {
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/git-flow.md/">git-flow</a>
+          </li>
         
           <li>
             <a href="/git use.md/">git use</a>
