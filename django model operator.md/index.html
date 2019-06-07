@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>django model operator | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ModelORM 当和数据库通信时，会由于开发语言和数据库的数据格式不一致，导致无法直接通信，使得通信变得很繁琐 ORM是解决此问题的必要方案。 ORM – Object Relational  Mapping  对象关系映射  python对象    关系表       搭建映射 对象属性          表中的列   搭建映射 使得对象和关系表可以直接通信，极大简化通信过程  Django的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="django model operator">
+<meta property="og:url" content="http://yoursite.com/django model operator.md/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ModelORM 当和数据库通信时，会由于开发语言和数据库的数据格式不一致，导致无法直接通信，使得通信变得很繁琐 ORM是解决此问题的必要方案。 ORM – Object Relational  Mapping  对象关系映射  python对象    关系表       搭建映射 对象属性          表中的列   搭建映射 使得对象和关系表可以直接通信，极大简化通信过程  Django的">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-07T14:50:21.925Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="django model operator">
+<meta name="twitter:description" content="ModelORM 当和数据库通信时，会由于开发语言和数据库的数据格式不一致，导致无法直接通信，使得通信变得很繁琐 ORM是解决此问题的必要方案。 ORM – Object Relational  Mapping  对象关系映射  python对象    关系表       搭建映射 对象属性          表中的列   搭建映射 使得对象和关系表可以直接通信，极大简化通信过程  Django的">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-django model operator" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-django model operator" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/django model operator.md/" class="article-date">
   <time datetime="2019-06-07T14:48:30.000Z" itemprop="datePublished">2019-06-07</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/django model operator.md/">django model operator</a>
+    <h1 class="article-title" itemprop="name">
+      django model operator
     </h1>
   
 
@@ -445,513 +447,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-git-flow" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/git-flow.md/" class="article-date">
-  <time datetime="2019-06-04T17:15:35.000Z" itemprop="datePublished">2019-06-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/git-flow.md/">git-flow</a>
-    </h1>
+    <a href="/git-flow.md/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">git-flow</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>安装(只介绍mac下的安装)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew update </span><br><span class="line">brew install git-flow-avh</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将远程GitflowDemo克隆到本地，并进入GitflowDemo目录：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">首先初始化：</span><br><span class="line">git flow init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开发新功能(feature):</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git flow feature start my-feature </span><br><span class="line">Switched to a new branch <span class="string">'feature/my-feature'</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在新分支my-feature上添加新功能：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git add test.txt</span><br><span class="line">$ git commit -m <span class="string">"create test.txt"</span></span><br><span class="line">[feature/my-feature e783fdf] create test.txt</span><br><span class="line"><span class="number">1</span> file changed, <span class="number">1</span> insertion(+)</span><br><span class="line">create mode <span class="number">100644</span> test.txt</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch feature/my-feature</span><br><span class="line">nothing to commit, working tree clean</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>完成开发，合并到develop分支上：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git flow feature finish my-feature</span><br><span class="line">Switched to branch <span class="string">'develop'</span></span><br><span class="line">Updating bde3a64..e783fdf</span><br><span class="line">Fast-forward</span><br><span class="line"> test.txt | <span class="number">1</span> +</span><br><span class="line"> <span class="number">1</span> file changed, <span class="number">1</span> insertion(+)</span><br><span class="line"> create mode <span class="number">100644</span> test.txt</span><br><span class="line">Deleted branch feature/my-feature (was e783fdf).</span><br><span class="line"></span><br><span class="line">Summary of actions:</span><br><span class="line">- The feature branch <span class="string">'feature/my-feature'</span> was merged into <span class="string">'develop'</span></span><br><span class="line">- Feature branch <span class="string">'feature/my-feature'</span> has been locally deleted</span><br><span class="line">- You are now on branch <span class="string">'develop'</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line">* develop</span><br><span class="line">  master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>就这样完成了合并到develop分支上s</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/git-flow.md/" data-id="cjwm7ivy20000kov9q1uix15v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-git use" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/git use.md/" class="article-date">
-  <time datetime="2019-05-07T16:03:56.000Z" itemprop="datePublished">2019-05-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/git use.md/">git use</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="git-总结："><a href="#git-总结：" class="headerlink" title="git  总结："></a>git  总结：</h3><ul>
-<li><p>初次使用一个项目的代码时：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  git@hostname:ip路径</span><br></pre></td></tr></table></figure>
-<p>会在当前使用git目录下生成一个项目名．</p>
-</li>
-<li><p>当<code>clone</code>下代码之后，对项目代码修改和更新的地方提交，merge request</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.在本地工作区创建一个分支：</span><br><span class="line">git branch -b mydevp</span><br><span class="line">git branch </span><br><span class="line">*master   #本地仓库的master,并非远端master </span><br><span class="line">mydevp</span><br><span class="line">2.git checkout mydevp </span><br><span class="line">3.git add .</span><br><span class="line">4.git commit -m &apos;说明&apos;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将本地代码向远程提交</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.将本地分支切换到主分支master上来</span><br><span class="line">git checkout master </span><br><span class="line">2.将远端主分支代码pull过来</span><br><span class="line">git pull origin --rebase master</span><br><span class="line">3.如果pull之后，没有冲突错误，则可以推代码了：</span><br><span class="line">git push </span><br><span class="line">4.当push完代码之后，就可以在gitlab上看到从本地哪个分支上提交上来的代码了．</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果远程代码有更新，需要拉代码．</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">从远程拉取最新的代码</span><br><span class="line">1.进入当前项目目录下．</span><br><span class="line">git checkout master </span><br><span class="line">2.切换到本地的主分支之后，再去pull代码到本地工作区</span><br><span class="line">git pull origin --rebase master</span><br></pre></td></tr></table></figure>
-<p>​</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/git use.md/" data-id="cjwm7iw090001kov9y4an4xj3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux生产环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/linux生产环境搭建.md/" class="article-date">
-  <time datetime="2019-04-21T16:44:49.000Z" itemprop="datePublished">2019-04-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/linux生产环境搭建.md/">linux生产环境搭建</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>安装方式(linux-mysql)</p>
-<p>(这里是在主目录下安装：)</p>
-<ul>
-<li>yum install -y mysql-server  #yum安装，需要外网环境</li>
-<li>将rpm文件，传送给linux，然后，通过rpm指令完成安装<ul>
-<li>rpm -ivh perl-*.rpm  #安装所有perl依赖</li>
-<li>rpm -Uvh mysql-libs-5.1.73-7.el6.i686.rpm  #更新mysql的类库</li>
-<li>rpm -ivh mysql-5.1.73-7.el6.i686.rpm  mysql-server-5.1.73-7.el6.i686.rpm  #安装mysql主服务</li>
-</ul>
-</li>
-</ul>
-<p>启动mysql服务</p>
-<ul>
-<li>service mysqld start/stop/restart/status<br>登陆mysql表：mysql  -u root  -p123456</li>
-<li>选择库 (show databases);  </li>
-<li>选择表(show tables)</li>
-<li>查询表(select * from tables where …….)</li>
-</ul>
-<p>远程权限</p>
-<ul>
-<li>到mysql库的user表中</li>
-<li>update user set host=’%’,password=password(‘123456’) where host=’127.0.0.1’; #添加可以远程访问的账号</li>
-<li>flush privileges; #刷新权限，保证新添加的账号可用</li>
-<li>关闭linux的防护墙，保证3306可以访问//关闭防火墙方法：service iptables stop </li>
-</ul>
-<p>防止mysql本地客户端数据乱码</p>
-<pre><code>/etc/my.cnf 中添加如下配置，即可
-[client]
-default-character-set=utf8
-</code></pre><p> 如上配置只作用客户端，要保证程序中数据不乱码：建库，建表时指定统一的字符集即可</p>
-<p>mysql卸载</p>
-<ul>
-<li>rpm -e mysql-server #只需卸载主服务即可</li>
-<li>rm  -rf  /var/lib/mysql #删除所有mysql的数据</li>
-</ul>
-<p>root密码找回</p>
-<ul>
-<li>到 /etc/my.cnf下添加配置<pre><code>[mysqld]
-...
-skip-grant-tables   #注意，建议在拆除网线的情况下添加  (而且添加配置后，需要重启mysqld服务)（mysqld service restart）
-#skip-grant-tables(跳过mysql访问table的权限＝＝不需要密码)
-</code></pre></li>
-<li>mysql -u root -p即可登录mysql</li>
-<li>update user set password=password(‘123’) where host=%;//修改密码<br>flush privileges;即可(用来刷新权限)</li>
-<li>将my.cnf的配置删除或注释</li>
-</ul>
-<p>myql安装</p>
-<ul>
-<li>安装过程 略</li>
-<li>安装依赖：yum install mysql-devel</li>
-<li>安装驱动：pip install mysqlclient</li>
-</ul>
-<p>python安装</p>
-<ul>
-<li>yum -y install  python-devel  openssl-devel  bzip2-devel  zlib-devel  expat-devel ncurses-devel sqlite-devel gdbm-devel xz-devel tk-devel readline-devel  gcc </li>
-<li>yum -y groupinstall “Development tools”</li>
-<li>如上两步，汇总安装了python生产环境的各种第三方依赖包</li>
-<li>正式安装，从下一步开始</li>
-<li>将python的tar包发送给linux (建议位置：/usr/local/xx)<br>//所谓的usr/local下的目录是把所有公共共享的资源存放在一个目录下的设置</li>
-<li>解压tar包:tar -zxvf Python-3.5.2.tgz ,会在当前目录下，出现解压目录</li>
-<li>cd到解压目录中配置：./configure –prefix=/usr/local/python3.5.2 –enable-optimizations<br>目的：检测环境中依赖是否完整，设置python的安装位置，<pre><code>同时生成一个编译文件，用于进行python编译：make
-</code></pre></li>
-<li>cd 到解压目录中：先 make 编译  然后  make  install 安装<pre><code>安装后的日志如下
-....
-Collecting setuptools
-Collecting pip
-Installing collected packages: setuptools, pip
-Successfully installed pip-8.1.1 setuptools-20.10.1
-</code></pre></li>
-<li>设置环境变量：/etc/profile中添加配置        //   /etc/profile 用来设置环境变量的文件<pre><code>在文件末尾追加，不要改动文件的其他内容！！！！！！！
-export python_home=/usr/local/python3.5.2
-export PATH=$PATH:$python_home/bin
-</code></pre>注意，设置好后，为了让环境变量生效：source /etc/profile，然后 python3即可进入python3的环境                                                       （source /etc/profile）让环境变量生效<br>注意，此时系统自带的python2 依然是默认python解释器</li>
-<li>将python3 设置为系统默认python解释器<ul>
-<li>将/usr/bin下的python文件删除或改名</li>
-<li>将python3的执行文件链接到  /usr/bin/python<pre><code>ln -s /usr/local/python3.5.2/bin/python3 /usr/bin/python
-</code></pre></li>
-<li>由于yum用python2编译执行，所以需要单独为yum设置为python2，找到/usr/bin/yum文件，修改文件头：#!/usr/bin/python2.6</li>
-</ul>
-</li>
-<li>更新pip<ul>
-<li>pip3 install –upgrade pip</li>
-</ul>
-</li>
-</ul>
-<p>Django 安装</p>
-<ul>
-<li>pip install django==”2.0.2”</li>
-<li>测试使用：<ul>
-<li>django-admin startproject testproj  在当前目录下创建一个project:”testproj”</li>
-<li>cd到testproj目录下的testporj目录下settings.py 修改配置：ALLOWED_HOSTS = [“*”]</li>
-<li>启动django内置的web服务器。cd到testproj目录下，执行：python manage.py runserver ip:port</li>
-<li>在浏览器中访问：ip:port</li>
-</ul>
-</li>
-</ul>
-<p>WSGI 协议</p>
-<ul>
-<li>一种Web服务器网关接口。是一个协议，是一个规范。</li>
-<li>一个Web服务器（如nginx，uWSGI等服务器）与web应用（如用Django框架写的程序）通信的规范</li>
-<li>python-web应用的中能写什么，服务器能识别什么，都遵循统一的WSGI规范。进而保证双方的通信</li>
-<li>WSGI使得 Server 和 App 解强耦合 ，中间连接的是WSGI协议</li>
-</ul>
-<p>uWSGI服务器安装</p>
-<p>WSGI协议下web服务器很多：django内置，uWSGI，gunicorn</p>
-<ul>
-<li>将tar发送linux</li>
-<li>解压tar：tar -zxvf  uwsgi-2.0.17.tar.gz</li>
-<li>cd到解压目录下，编译：make</li>
-<li>为了可以更方便的执行  uwsgi   #启动uWSGI服务器 ，定制链接：<br>ln -s /usr/local/uwsgi-tar/uwsgi-2.0.17/uwsgi /usr/bin/uwsgi<br>则可以在任意目录下执行 uwsgi 去启动uWSGI服务器</li>
-<li>测试使用python的wsgi服务器-uWSGI<ul>
-<li>在任意的一个目录中定义一个phthon脚本：hilo.py<pre><code>def application(env, start_response):
-    start_response(&apos;200 OK&apos;, [(&apos;Content-Type&apos;,&apos;text/html;charset=utf-8&apos;)])
-    return [bytes(&apos;你好啊！！&apos;,&apos;utf-8&apos;),b&apos;zhjzhj&apos;]
-</code></pre></li>
-<li>启动uWSGI服务器，并部署hilo.py程序<br>uwsgi –http 192.168.248.128:8001 –wsgi-file hilo.py   #注意hilo.py可以写成绝对路径</li>
-<li>浏览器访问：192.168.248.128:8001</li>
-</ul>
-</li>
-</ul>
-<p>uWSGI服务器启动，并部署django项目</p>
-<ul>
-<li>让uwsgi项目下的django项目和mysql数据库捆绑移植</li>
-<li>首要去/etc/my.cnf下去设置mysqld的配置</li>
-<li>设置mysql的引擎默认为：innodb**<br>在/etc/my.cnf的[mysqld]中添加配置：default-storage-engine=InnoDB</li>
-<li>建议设置为严格模式:<br>在/etc/my.cnf的[mysqld]中添加配置 :  sql_mode=STRICT_TRANS_TABLES<ul>
-<li>mysql&gt; show variables where variable_name like ‘%mode%’;#可以查看mysql的配置参数</li>
-</ul>
-</li>
-<li>在数据库中建好项目需要的database：“db9”<ul>
-<li>使用Navicat创建即可,注意字符集为 utf8</li>
-</ul>
-</li>
-<li><p>在Django项目的settings.py中修改配置</p>
-<pre><code>DEBUG = False  #去掉开发模式
-ALLOWED_HOSTS = [&quot;*&quot;] #开放访问host
-DATABASES = { #合适数据库参数
-    &apos;default&apos;: {
-        &apos;ENGINE&apos;: &apos;django.db.backends.mysql&apos;,
-        &apos;NAME&apos;: &apos;db9&apos;,
-        &apos;USER&apos;: &apos;root&apos;,
-        &apos;HOST&apos;: &apos;localhost&apos;,
-        &apos;PORT&apos;: &apos;3306&apos;,
-        &apos;PASSWORD&apos;: &apos;222222&apos;
-    }
-}
-</code></pre></li>
-<li><p>发送项目到linux并做移植<br>python manage.py makemigrations<br>python manage.py migrate</p>
-</li>
-<li>编写uWSGI的配置文件<pre><code>随意找一个目录，定义一个文件：config.ini
-[uwsgi]
-http = 192.168.248.128:9000 # uWSGI服务器访问地址
-#uWSGI和nginx通信的port
-socket = 192.168.248.128:9001
-# the base directory (full path)
-chdir = /usr/local/django_projects/ems #项目所在目录
-# Django&apos;s wsgi file
-wsgi-file = ems/wsgi.py #基于项目目录的相对路径
-# maximum number of worker processes
-processes = 4
-#thread numbers startched in each worker process
-threads = 2
-#monitor uwsgi status　　用来监控uwsgi的状态
-stats = 192.168.248.128:9002
-# clear environment on exit
-vacuum = true
-pidfile = /usr/local/django_projects/ems/uwsgi.pid #进程ID存放于此文件，位置可以自定义
-#daemonize-run ,file-to-record-log
-daemonize = /usr/local/django_projects/ems/uwsgi.log #后台启动模式，日志文件记录位置自定义
-#http://ip:port/static/...请求会进入该目录找资源，此处可以指向某个app下的static目录
-#或是将所有静态文件汇总到项目的某一个目录下，然后配置在此是更好的选择
-#汇集所有已安装app的静态资源到一个目录下，请参见后续内容
-#http://ip:port/static/a/b/c/d.png   ==&gt;  /usr/local/xxxx/static9/a/b/c/d.png
-static-map =/static=/usr/local/django_projects/ems/static9   
-</code></pre></li>
-<li>根据如上配置启动uWSGI服务器<br>uwsgi –ini config.ini  #注意：config.ini是一个相对路径</li>
-<li>关闭服务器<br>uwsgi –stop /usr/local/django_projects/ems/uwsgi.pid #通过进程id文件</li>
-<li>部署项目技巧：静态资源管理之汇总<ul>
-<li>在project的settings.py中添加配置：STATIC_ROOT = os.path.join(BASE_DIR,’static9’)<br>STATIC_ROOT指向project目录下的static9目录</li>
-<li>执行汇总指令：python manage.py collectstatic  </li>
-<li>这样所有的静态资源目录会在项目目录下自动生成一个static9目录<br>会将所有已安装   APP下的静态资源    以及<br>额外添加的静态目录   STATICFILES_DIRS  汇总到指定目录</li>
-<li>然后在uWSGI的配置文件中：static-map =/static=/usr/local/xxx/xxx  ==&gt;指定目录</li>
-</ul>
-</li>
-</ul>
-<p>安装nginx</p>
-<p>uWSGI属于应用服务器，更适合做动态内容的执行</p>
-<p>nginx属于web服务器，更合做静态内容的处理(js,css,image)</p>
-<ul>
-<li>将tar包发送的linux</li>
-<li>解压 tar -zxvf nginx-1.11.1.tar.gz </li>
-<li>安装依赖 yum install gcc zlib-devel pcre-devel  不过gcc和zlib-devel已经安装过</li>
-<li>cd到解压目录：./configure    #配置检测</li>
-<li>cd到解压目录：make &amp;&amp; make install  #编译并安装</li>
-<li>安装完成，安装路径为/usr/local/nginx   ,日志路径为 /usr/local/nginx/logs ,<br>可执行文件路径为 /usr/local/nginx/sbin ,配置文件路径为 /usr/local/nginx/conf<br>欢迎页面路径为 /usr/local/nginx/html</li>
-<li>ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx 制作连接，便于执行nginx指令</li>
-<li>nginx  #启动<br>nginx -s stop #关闭<br>nginx -s reload #重启<br><a href="http://ip:80即可访问nginx欢迎页面" target="_blank" rel="noopener">http://ip:80即可访问nginx欢迎页面</a></li>
-</ul>
-<p>nginx配置</p>
-<p>到配置路径中的nginx.conf (upstream)</p>
-<pre><code>upstream django99{
-    server 192.168.180.131:9001; # uWSGI&apos;s socket = 192.168.x.x:8001
-}#uwsgi 服务器的ip和port 
-server {
-    listen 80;
-    server_name  192.168.180.131;#nginx服务器的ip和端口号
-    charset utf-8;
-    location / {
-        uwsgi_pass  django99;
-        include  /usr/local/uwsgi_params; # the uwsgi_params file you installed
-    }    
-    location /static {
-        alias /usr/local/static; # your Django project&apos;s static files - namend as required
-    }
-}
-</code></pre><p>配置好后，重启nginx即可</p>
-<p>克隆虚拟环境</p>
-<pre><code>1.vi /etc/sysconfig/network-scripts/ifcfg-eth0
-2.删除HWADDR所在行，和UUID所在行
-3.删除 /etc/udev/rules.d/70-persistent-net.rules
-4.reboot 重启虚拟机
-</code></pre><p>负载均衡策略</p>
-<p>搭建uWSGI集群，只需要多做积分uWSGI的配置文件，文件中设置不同的ip:port，指向不同的project，然后启动多个uWSGI即可</p>
-<pre><code>*默认:轮询 rr
-        upstream django {
-            server 192.168.0.103:8989;
-            server 192.168.0.103:8990;
-        }
-*iphash:基于ip的负载均衡.
-        upstream django {
-            ip_hash;
-            server 192.168.0.103:8989;
-            server 192.168.0.103:8990;
-        }    
-*权重轮询:
-        upstream django {
-            server 192.168.0.103:8989 weight=1;
-            server 192.168.0.103:8990 weight=2;
-        }
-*最小连接数：
-        upstream django {
-            least_conn;
-            server 192.168.0.103:8989;
-            server 192.168.0.103:8990;
-        }
-</code></pre><p>至此，一个uWSGI集群搭建完成，nginx作为反向代理服务器和web服务器接收请求，然后处理静态的部分，动态部分按照负载均衡策略转发给某一个uWSGI服务器。</p>
-<p>至此python-web-project成功运行于 一个对高并发有更好支持，具有高可用性的系统中</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/linux生产环境搭建.md/" data-id="cjwm7iw0s0004kov94fx0kbqp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/hello-world.md/" class="article-date">
-  <time datetime="2019-04-20T17:31:15.627Z" itemprop="datePublished">2019-04-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/hello-world.md/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/hello-world.md/" data-id="cjwm7iw0b0002kov9vue22j52" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-supervisor的安装与使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/supervisor的安装与使用.md/" class="article-date">
-  <time datetime="2019-04-19T14:03:18.078Z" itemprop="datePublished">2019-04-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/supervisor的安装与使用.md/">supervisor安装与使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="supervisor的安装与使用"><a href="#supervisor的安装与使用" class="headerlink" title="supervisor的安装与使用"></a>supervisor的安装与使用</h1><h4 id="supervisor的作用"><a href="#supervisor的作用" class="headerlink" title="supervisor的作用:"></a>supervisor的作用:</h4><ul>
-<li><p><code>superviosr</code>  是linux或unix环境下常用的进程管理工具,它支持windows和Mac平台下使用,用来控制管理进程(启动,重启,kill)等.</p>
-</li>
-<li><p>使用<code>supervisor</code>管理的进程, 可以做到以守护进程的方式,可以对服务异常关闭的进程进行重启;</p>
-<p>####supervisor的安装 :</p>
-<ul>
-<li><strong>supervisord</strong>     服务端使用命令</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p><strong>supervisorctl</strong>    客户端使用命令</p>
-<p><code>pip install supervisor</code>直接使用python自带pip 安装</p>
-<p><code>supervisord -v</code>用来查看下载的版本</p>
-<h4 id="supervisor的配置和启动："><a href="#supervisor的配置和启动：" class="headerlink" title="supervisor的配置和启动："></a>supervisor的配置和启动：</h4><p><img src="D:\新建文件夹 (2" alt="png">\md_png\supervisor.png)</p>
-<p>####编写supervisor的应用启动脚本：      <img src="D:\新建文件夹 (2" alt="png">\md_png\supervisorctl.png)</p>
-</li>
-</ul>
-<p>​        <code>supervisorctl update</code>命令可以重启supervisord服务端</p>
-<h4 id="supervisorctl的使用："><a href="#supervisorctl的使用：" class="headerlink" title="supervisorctl的使用："></a>supervisorctl的使用：</h4><p>　　<code>help</code>  <strong>帮助</strong></p>
-<p>​        <code>status</code>  <strong>查看程序状态</strong></p>
-<p>​        <code>stop program_name</code>  <strong>关闭指定的程序</strong></p>
-<p>​        <code>start program_name</code> <strong>启动指定的程序</strong></p>
-<p>​        <code>restart program_name</code>  <strong>重启指定的程序</strong></p>
-<p>​        <code>tail -f program_name</code> <strong>查看该程序的日志</strong></p>
-<p>​        <code>update</code>  <strong>重启配置文件修改过的程序</strong></p>
-<p>​        也可以直接通过shell命令行操作： </p>
-<p>​        <code>supervisorctl status</code></p>
-<p>​        <code>supervisorctl update</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/supervisor的安装与使用.md/" data-id="cjwm7iw0e0003kov9w54dnkpu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
